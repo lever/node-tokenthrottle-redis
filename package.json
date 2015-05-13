@@ -7,7 +7,7 @@
     "test": "test"
   },
   "dependencies": {
-    "tokenthrottle": "~1.1.0",
+    "tokenthrottle": "git+ssh://git@github.com:lever/node-tokenthrottle",
     "redis": "~0.10.0"
   },
   "devDependencies": {
