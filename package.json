@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "tokenthrottle": "git+ssh://git@github.com:lever/node-tokenthrottle",
-    "redis": "~0.10.0"
+    "redis": "^2.2.1"
   },
   "devDependencies": {
     "tape": "~2.4.2"
