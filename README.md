@@ -6,6 +6,10 @@ Redis TokenThrottle
 [![david-dm](https://david-dm.org/brycebaril/node-tokenthrottle-redis.png)](https://david-dm.org/brycebaril/node-tokenthrottle-redis/)
 [![david-dm](https://david-dm.org/brycebaril/node-tokenthrottle-redis/dev-status.png)](https://david-dm.org/brycebaril/node-tokenthrottle-redis#info=devDependencies/)
 
+:warning: :rotating_light: :warning: :rotating_light:  
+This fork is not published to any NPM registry! Do not include it with a version dependency in `package.json`. Use a GitHub URL and lock the dependency to a specific commit instead.  
+:warning: :rotating_light: :warning: :rotating_light:
+
 A Redis-backed implementation of [tokenthrottle](http://npm.im/tokenthrottle)
 
 Simply wraps [tokenthrottle](http://npm.im/tokenthrottle) with a Redis back-end, so you can use it across multiple servers/processes.
