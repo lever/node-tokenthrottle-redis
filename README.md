@@ -14,9 +14,15 @@ A Redis-backed implementation of [tokenthrottle](http://npm.im/tokenthrottle)
 
 Simply wraps [tokenthrottle](http://npm.im/tokenthrottle) with a Redis back-end, so you can use it across multiple servers/processes.
 
+This module uses the **redis@4** promise-based client. The client must be
+created **and connected** before being passed in (redis@4 does not auto-connect).
+The redis client is supplied by the caller; this module does not depend on redis
+at runtime.
+
 ```javascript
-// Create a redis client
+// Create and connect a redis@4 client
 var redisClient = require("redis").createClient()
+await redisClient.connect()
 
 // Create a throttle with 100 access limit per second.
 var throttle = require("tokenthrottle-redis")({rate: 100, expiry: 86400}, redisClient)
